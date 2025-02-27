@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'outFirstApp';
+  title = 'I Love Angular from TS file !!!';
+
+  skills : Array<string> = ["JS", "TS", "Angular", "Node"]
 }
