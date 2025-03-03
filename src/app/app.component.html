@@ -1,166 +1,129 @@
-
-
 <h1 class="bg-info text-white p-4">
   {{title}}
 </h1>
 
+<div class="container mt-5">
+  <div class="row">
+      <div class="col-12">
+        <!-- <app-product></app-product> -->
+         <app-employees></app-employees>
+         
+      </div>
+  </div>
+</div>
 
 <div class="container mt-5">
   <div class="row">
     <div class="col-12">
-      <h1>List of Skills</h1>
-      <ul class="list-group">
-        <li 
-        *ngFor="let skill of skills"
-        class="list-group-item">
-            {{skill}}
-        </li>
-      </ul>
-
-      <hr>
-      <h1>List of FullStack Development</h1>
-      <ul class="list-group">
-        <li 
-        *ngFor="let skill of fullstackdev"
-        class="list-group-item">
-          {{skill}}
-        </li>
-      </ul>
-
-      <hr>
-      <h1>List of Data Science & AI Skills</h1>
-      <ul class="list-group">
-        <li 
-        *ngFor="let skill of DataSciAIskill"
-        class="list-group-item">
-          {{skill}}
-        </li>
-      </ul>
-
-      <hr>
-
-      <h1>List of Cybersecurity Skills</h1>
-      <ul class="list-group">
-        <li 
-        *ngFor="let skill of Cybersecurityskill"
-        class="list-group-item">
-          {{skill}}
-        </li>
-      </ul>
-
-      <hr>
-
-      <h1>List of DevOps & Cloud Skills</h1>
-      <ul class="list-group">
-        <li 
-        *ngFor="let skill of DevOpsCloudSkill"
-        class="list-group-item">
-          {{skill}}
-        </li>
-      </ul>
-
-      <hr>
-      <!-- tabel item -->
-       <h1>Table Items</h1>
+     <h1> Cricketers Table </h1>
       <table class="table table-bordered">
         <thead>
-          <tr>
-            <th>Sr No</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Email</th>
-            <th>Contact</th>
-          </tr>
+            <tr class="bg-primary">
+              <th>Sr No</th>
+              <th>Name</th>
+              <th>Country</th>
+              <th>ODIDebut</th>
+              <th>Matches</th>
+              <th>Runs</th>
+              <th>HeighestScore</th>
+              <th>Centuries</th>
+              <th>Fifties</th>
+              <th>BattingAverage</th>
+              <th>Wickets</th>
+            </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let person of persons; let i = index">
+          <tr class="bg-light" *ngFor="let match of cricket; let i = index">
             <td>{{i + 1}}</td>
-            <td>{{person.fname}}</td>
-            <td>{{person.lname}}</td>
-            <td>{{person.email}}</td>
-            <td>{{person.contact}}</td>
+            <td>{{match.name}}</td>
+            <td>{{match.country}}</td>
+            <td>{{match.odiDebut}}</td>
+            <td>{{match.matches}}</td>
+            <td>{{match.runs}}</td>
+            <td>{{match.highestScore}}</td>
+            <td>{{match.centuries}}</td>
+            <td>{{match.fifties}}</td>
+            <td>{{match.battingAverage}}</td>
+            <td>{{match.wickets}}</td>
           </tr>
         </tbody>
-        <hr>
+      </table>
+      <hr>
+      <table class="table table-bordered">
         <thead>
-          <tr>
-            <th>Sr No</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Email</th>
-            <th>Contact</th>
-          </tr>
+            <tr class="bg-primary">
+              <th>Sr No</th>
+              <th>Name</th>
+              <th>Country</th>
+              <th>ODIDebut</th>
+              <th>Matches</th>
+              <th>Runs</th>
+              <th>HeighestScore</th>
+              <th>Centuries</th>
+              <th>Fifties</th>
+              <th>BattingAverage</th>
+              <th>Wickets</th>
+            </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let person of persons2; let i = index">
+          <tr class="bg-light" *ngFor="let intrmatch of intrcricket; let i = index">
             <td>{{i + 1}}</td>
-            <td>{{person.fname}}</td>
-            <td>{{person.lname}}</td>
-            <td>{{person.email}}</td>
-            <td>{{person.contact}}</td>
-          </tr>
-        </tbody>
-        <hr>
-        <thead>
-          <tr>
-            <th>Sr No</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Email</th>
-            <th>Contact</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let person of persons3; let i = index">
-            <td>{{i + 1}}</td>
-            <td>{{person.fname}}</td>
-            <td>{{person.lname}}</td>
-            <td>{{person.email}}</td>
-            <td>{{person.contact}}</td>
-          </tr>
-        </tbody>
-        <hr>
-
-        <thead>
-          <h2>Employee Table</h2>
-          <tr>
-            <th>Sr No</th>
-            <th>Employe Name</th>
-            <th>Department</th>
-            <th>Salary</th>
-            <th>EmpID</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let person of employe; let i = index">
-            <td>{{i + 1}}</td>
-            <td>{{person.empname}}</td>
-            <td>{{person.department}}</td>
-            <td>{{person.salary}}</td>
-            <td>{{person.empid}}</td>
+            <td>{{intrmatch.name}}</td>
+            <td>{{intrmatch.country}}</td>
+            <td>{{intrmatch.odiDebut}}</td>
+            <td>{{intrmatch.matches}}</td>
+            <td>{{intrmatch.runs}}</td>
+            <td>{{intrmatch.highestScore}}</td>
+            <td>{{intrmatch.centuries}}</td>
+            <td>{{intrmatch.fifties}}</td>
+            <td>{{intrmatch.battingAverage}}</td>
+            <td>{{intrmatch.wickets}}</td>
           </tr>
         </tbody>
 
         <hr>
-
-        <thead>
+        
+        <!-- <thead>
           <tr>
             <th>Sr No</th>
-            <th>Employe Name</th>
-            <th>Department</th>
-            <th>Salary</th>
-            <th>EmpID</th>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Role</th>
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let person of employe2; let i = index">
+          <tr *ngFor="let Users of Users; let i = index">
             <td>{{i + 1}}</td>
-            <td>{{person.empname}}</td>
-            <td>{{person.department}}</td>
-            <td>{{person.salary}}</td>
-            <td>{{person.empid}}</td>
+            <td>{{Users.id}}</td>
+            <td>{{Users.name}}</td>
+            <td>{{Users.email}}</td>
+            <td>{{Users.role}}</td>
           </tr>
         </tbody>
+
+        <hr>
+        
+
+        <thead>
+          
+          <tr>
+            <th>Sr No</th>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Role</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let Products of Products; let i = index">
+            <td>{{i + 1}}</td>
+            <td>{{Products.id}}</td>
+            <td>{{Products.name}}</td>
+            <td>{{Products.category}}</td>
+            <td>{{Products.price}}</td>
+          </tr>
+        </tbody> -->
       </table>
     </div>
   </div>

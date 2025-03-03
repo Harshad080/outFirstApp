@@ -1,0 +1,148 @@
+
+
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12">
+            <h1>Employees Table</h1>
+          <table class="table table-bordered">
+            <thead>
+                <tr class="bg-success">
+                  <th>Sr No</th>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Role</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-secondary" *ngFor="let employees of employees; let i = index">
+                  <td>{{i + 1}}</td>
+                  <td>{{employees.id}}</td>
+                  <td>{{employees.name}}</td>
+                  <td>{{employees.department}}</td>
+                  <td>{{employees.salary}}</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+    </div>
+  </div>
+
+              <div class="container mt-5">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>Users Table</h1>
+                      <table class="table table-bordered"> 
+                        <thead>
+                            <tr class="bg-success">
+                              <th>Sr No</th>
+                              <th>ID</th>
+                              <th>Name</th>
+                              <th>Email</th>
+                              <th>Role</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="bg-secondary" *ngFor="let Users of Users; let i = index">
+                              <td>{{i + 1}}</td>
+                              <td>{{Users.id}}</td>
+                              <td>{{Users.name}}</td>
+                              <td>{{Users.email}}</td>
+                              <td>{{Users.role}}</td>
+                            </tr>
+                          </tbody>
+                      </table>
+                    </div>
+                </div>
+              </div>            
+
+              <div class="container mt-5">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>Products Table</h1>
+                      <table class="table table-bordered"> 
+                        <thead>
+                
+                            <tr class="bg-success">
+                              <th>Sr No</th>
+                              <th>ID</th>
+                              <th>Name</th>
+                              <th>Email</th>
+                              <th>Role</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="bg-secondary" *ngFor="let Products of Products; let i = index">
+                              <td>{{i + 1}}</td>
+                              <td>{{Products.id}}</td>
+                              <td>{{Products.name}}</td>
+                              <td>{{Products.category}}</td>
+                              <td>{{Products.price}}</td>
+                            </tr>
+                          </tbody>
+                      </table>
+                    </div>
+                </div>
+              </div>   
+
+              <div class="container mt-5">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>Books Table</h1>
+                      <table class="table table-bordered"> 
+                        <thead>
+                
+                            <tr class="bg-success">
+                              <th>Sr No</th>
+                              <th>ID</th>
+                              <th>Title</th>
+                              <th>Author</th>
+                              <th>Year</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="bg-secondary" *ngFor="let Books of books; let i = index">
+                              <td>{{i + 1}}</td>
+                              <td>{{Books.id}}</td>
+                              <td>{{Books.title}}</td>
+                              <td>{{Books.author}}</td>
+                              <td>{{Books.year}}</td>
+                            </tr>
+                          </tbody>
+                      </table>
+                    </div>
+                </div>
+              </div>   
+
+
+
+              <div class="container mt-5">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>Students Table</h1>
+                      <table class="table table-bordered"> 
+                        <thead>
+                
+                            <tr class="bg-success">
+                              <th>Sr No</th>
+                              <th>ID</th>
+                              <th>Name</th>
+                              <th>Grade</th>
+                              <th>Age</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="bg-secondary" *ngFor="let Students of students; let i = index">
+                              <td>{{i + 1}}</td>
+                              <td>{{Students.id}}</td>
+                              <td>{{Students.name}}</td>
+                              <td>{{Students.grade}}</td>
+                              <td>{{Students.age}}</td>
+                            </tr>
+                          </tbody>
+                      </table>
+                    </div>
+                </div>
+              </div>   
+
